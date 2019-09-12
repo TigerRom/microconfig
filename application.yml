@@ -1,0 +1,15 @@
+# 这里显示使用的是哪个版本,默认设置为dev-7001
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:  
+  profiles: dev
+  application:
+    name: microcloud-test-dev   # 设置eureka服务名称
+---
+spring:  
+  profiles: dafault
+  application:
+    name: microcloud-test-default   # 设置eureka服务名称
