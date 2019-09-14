@@ -34,7 +34,7 @@ spring:   # 表示该配置直接由Spring容器进行负责处理
     password: hello  # 密码
     role: 
     - USER
-  profiles: beta
+  profiles: dev
   application:
     name: microcloud-config-dept-client    # 为该服务设置名称
 eureka:
@@ -53,7 +53,7 @@ info:
   build.version: $project.version$
 ---
 server: 
-  port: 8001
+  port: 8002
 mybatis: 
   config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis配置文件所在路径
   type-aliases-package: cn.mldn.vo            # 定义所有操作类的别名所在包
@@ -83,7 +83,7 @@ spring:   # 表示该配置直接由Spring容器进行负责处理
     password: hello  # 密码
     role: 
     - USER
-  profiles: dev
+  profiles: beta
   application:
     name: microcloud-config-dept-client    # 为该服务设置名称
 eureka:
